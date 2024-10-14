@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Crimson Text", serif;
+}
+/* header */
+header{
+    background-color: #00420c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    height: 7rem;
+
+}
+
+#titulo{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem 6rem;
+    list-style: none;
+    color: #ffffff;  
+    justify-items: center;
+}
+li{
+    padding: 1rem;
+    
+}
+
+li:hover{
+    background-color: #2f9e41;
+}
+
+h1{
+    color: #ffffff;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* main */
+
+#conteudo{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
+}
+#diciplinas{
+    color: #00420c;
+    font-weight: bold;
+}
+
+#imagem{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.img{
+    width: 30rem;
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    background-color: #212529;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* footer */
+
+footer{
+    background-color: #00420c;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: space-around;
+    gap: 20rem;
+    height: 7rem;
+
+}
+
+#redes{
+    display: flex;
+    gap: 1rem;   
+}
+
+/* responsividade */
+@media screen and (max-width: 375px){
+
+    main {
+        padding: 1rem;
+        gap: 1rem;
+        margin-top:4rem;
+    }
+
+    .conteudo {
+        gap: 1rem;
+    }
+
+    /* header */
+    header{
+       padding: .5rem 1rem;
+       justify-content: space-between;
+       position: fixed;
+       top: 0;
+       width: 100%;
+   }
+
+   ul{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   /* main */
+ main{
+    gap: 1.5rem;
+}
+
+.imagem{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 0;
+    row-gap: 3.5rem;
+}
+
+.img{
+    grid-column: 1 / 2;
+}
+
+   /* footer */
+   
+footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+    line-height: 150%;
+    padding: .5rem 25%;
+    margin-top: 0;
+}
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Crimson Text", serif;
+}
+/* header */
+header{
+    background-color: #00420c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    height: 7rem;
+
+}
+
+#titulo{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 7rem 8rem 7rem 7em;
+    list-style: none;
+    color: #ffffff;  
+    justify-items: center;
+}
+
+li{
+    padding: 1rem;
+}
+
+li:hover{
+    background-color: #2f9e41;
+}
+
+h1{
+    color: #ffffff;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* main */
+
+
+#conteudo{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.input{
+    background-color: #EEEEEE;
+    margin-top: 10px;
+    height: 1.7rem;
+    border-radius: 5px;
+}
+#mensagem{
+    background-color: #EEEEEE;
+    margin-top: 10px;
+    height: 4rem;
+    border-radius: 5px;
+}
+#enviar{
+    background-color: #212529;
+    margin-top: 10px;
+    height: 2rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+#mapa{
+    width: 80%;
+    height: 80%;
+}
+
+/* footer */
+
+footer{
+    background-color: #00420c;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: space-around;
+    gap: 20rem;
+    height: 7rem;
+
+}
+
+#redes{
+    display: flex;
+    gap: 1rem;   
+}
+
+/* responsividade */
+@media screen and (max-width: 375px){
+  
+   
+    main {
+        padding: 1rem;
+        gap: 1rem;
+        margin-top:4rem;
+    }
+
+    .conteudo {
+        gap: 1rem;
+    }
+  
+    /* header */
+     header {
+        padding: .5rem 1rem;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+ 
+ 
+     /* main */
+    .principal form {
+        height: auto;
+    }
+    
+    .principal {
+        flex-direction: column-reverse;
+        justify-content: stretch;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .principal img,
+    .contato form {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .principal input[type="text"],
+    .principal input[type="email"] {
+        flex: 1 100px;
+    }
+
+    .principal textarea {
+        flex: 2 100%; 
+    }
+
+
+/* footer */
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+    line-height: 150%;
+    padding: .5rem 25%;
+    margin-top: 0;
+}
+}
+
+
+
+
